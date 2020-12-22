@@ -18,3 +18,6 @@ RUN apk upgrade --update && \
 
 # JS
 RUN apk --no-cache --update add nodejs nodejs-npm yarn
+
+# テストがエラーで動かないため
+RUN apk add chromium chromium-chromedriver ttf-freefont

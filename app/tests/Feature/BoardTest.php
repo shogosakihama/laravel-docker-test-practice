@@ -13,10 +13,10 @@ class BoardTest extends TestCase
      *
      * @return void
      */
-    public function testExample()
+    public function testIndex()
     {
-        $response = $this->get('/');
-
+        $this->withoutExceptionHandling();
+        $response = $this->get('/boards');
         $response->assertStatus(200);
     }
 }
